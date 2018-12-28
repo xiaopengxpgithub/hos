@@ -1,0 +1,10 @@
+com\xp\hos\utils\HosUtil.class
+com\xp\hos\hdfs\HDFSServerImpl.class
+com\xp\hos\service\impl\HosStoreImpl.class
+com\xp\hos\hdfs\IHDFSServer.class
+com\xp\hos\service\IBucketService.class
+com\xp\hos\exception\HosServerException.class
+com\xp\hos\hbase\HbaseServiceImpl.class
+com\xp\hos\service\impl\BucketServiceImpl.class
+com\xp\hos\service\IHosStore.class
+com\xp\hos\mapper\BucketMapper.class

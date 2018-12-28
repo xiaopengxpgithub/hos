@@ -1,0 +1,17 @@
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\utils\CoreUtil.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\exception\UserMsgException.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\pojo\ServiceAuth.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\service\impl\AuthServiceImpl.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\service\impl\UserServiceImpl.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\exception\ErrorCodes.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\service\IUserService.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\mapper\UserInfoMapper.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\pojo\UserInfo.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\pojo\TokenInfo.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\pojo\SystemRole.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\service\IAuthService.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\mapper\ServiceAuthMapper.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\mapper\TokenInfoMapper.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\exception\HosException.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\exception\AuthMsgException.java
+F:\intellij-projects\hos\hos-service\hos-core\src\main\java\com\xp\hos\utils\HosConfig.java

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xp.hos.mapper.UserInfoMapper">
+    <resultMap id="userResultMap" type="UserInfo">
+        <id column="user_Id" property="userId"></id>
+        <result column="user_name" property="userName"></result>
+        <result column="password" property="password"></result>
+        <result column="detail" property="detail"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="system_role" property="systemRole"></result>
+    </resultMap>
+
+    <insert id="addUserInfo">
+      insert into user_info(user_id,user_name,password,detail,create_time,system_role)
+      values(#{userInfo.userId},#{userInfo.userName},#{userInfo.password}, #{userInfo.detail},#{userInfo.createTime},#{userInfo.systemRole})
+    </insert>
+
+    <delete id="deleteUser">
+        delete From user_info where user_id=#{userId}
+    </delete>
+
+    <update id="updateUserInfo">
+        update user_info set user_id #{userId}
+        <if test="password != null and password != ''">
+            , password=#{password}
+        </if>
+        <if test="detail != null and detail != ''">
+            , detail=#{detail}
+        </if>
+        where user_id = #{userId}
+    </update>
+
+    <select id="getUserInfoById"  resultMap="userResultMap">
+      select * from  user_info where user_id=#{userId}
+    </select>
+
+    <select id="getUserInfoByName" resultMap="userResultMap">
+       select * from  user_info where user_name=#{userName}
+    </select>
+
+    <select id="getUserInfoByUsernamePassword" resultMap="userResultMap">
+        select * from user_info where user_name=#{userName} and password=#{password}
+    </select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xp.hos.mapper.ServiceAuthMapper">
+    <resultMap id="serviceAuthMap" type="ServiceAuth">
+        <id column="bucket_name" property="bucketName"></id>
+        <result column="target_token" property="targetToken"></result>
+        <result column="auth_time" property="authTime"></result>
+    </resultMap>
+
+    <insert id="addAuth">
+        insert into service_auth(bucket_name,target_token,auth_time)
+        values(#{auth.bucketName},#{auth.targetToken},#{auth.authTime})
+    </insert>
+
+    <delete id="deleteAuth">
+      delete from service_auth where bucket_name=#{bucket} and target_token=#{token}
+    </delete>
+
+    <delete id="deleteAuthByToken">
+      delete from service_auth where target_token=#{token}
+    </delete>
+
+    <delete id="deleteAuthByBucket">
+        delete from service_auth where bucket_name=#{bucket}
+    </delete>
+
+    <select id="getAuth" resultMap="serviceAuthMap">
+        select * from service_auth where bucket_name=#{bucket} and target_token=#{token}
+    </select>
+</mapper>

@@ -1,0 +1,17 @@
+com\xp\hos\service\IUserService.class
+com\xp\hos\pojo\ServiceAuth.class
+com\xp\hos\utils\CoreUtil.class
+com\xp\hos\exception\UserMsgException.class
+com\xp\hos\mapper\TokenInfoMapper.class
+com\xp\hos\mapper\UserInfoMapper.class
+com\xp\hos\pojo\TokenInfo.class
+com\xp\hos\exception\ErrorCodes.class
+com\xp\hos\pojo\UserInfo.class
+com\xp\hos\service\IAuthService.class
+com\xp\hos\utils\HosConfig.class
+com\xp\hos\service\impl\UserServiceImpl.class
+com\xp\hos\mapper\ServiceAuthMapper.class
+com\xp\hos\pojo\SystemRole.class
+com\xp\hos\service\impl\AuthServiceImpl.class
+com\xp\hos\exception\HosException.class
+com\xp\hos\exception\AuthMsgException.class

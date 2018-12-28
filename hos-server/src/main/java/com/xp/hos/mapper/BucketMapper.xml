@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xp.hos.mapper.BucketMapper">
+    <resultMap id="bucketModelResultMap" type="BucketModel">
+        <id column="bucket_id" property="bucketId"></id>
+        <result column="bucket_name" property="bucketName"></result>
+        <result column="creator" property="creator"></result>
+        <result column="detail" property="detail"></result>
+        <result column="create_time" property="createTime"></result>
+    </resultMap>
+
+    <insert id="addBucket">
+        insert into
+            hos_bucket(bucket_id,bucket_name,creator,detail,create_time)
+        values
+            (#{bucket.bucketId},#{bucket.bucketName},#{bucket.creator},#{bucket.detail},#{bucket.createTime})
+    </insert>
+
+    <delete id="deleteBucket">
+        delete from hos_bucket where bucket_name=#{bucketName}
+    </delete>
+
+    <update id="updateBucket">
+        update hos_bucket set bucket_name=#{bucketName}
+        <if test="detail !=null and detail !=''">
+            ,detail=#{detail}
+        </if>
+    </update>
+
+    <select id="getBucket" resultMap="bucketModelResultMap">
+        select * from hos_bucket where bucket_id=#{bucketId}
+    </select>
+
+    <select id="getBucketByName" resultMap="bucketModelResultMap">
+         select * from hos_bucket where bucket_name=#{bucketName}
+    </select>
+
+    <select id="getBucketModelsByCreator" resultMap="bucketModelResultMap">
+        select * from hos_bucket where creator=#{creator}
+    </select>
+
+    <select id="getUserAuthBuckets" resultMap="bucketModelResultMap">
+        select * from hos_bucket hb,service_auth sa
+        where sa.target_token=#{token} and sa.bucket_name=hb.bucket_name
+    </select>
+</mapper>

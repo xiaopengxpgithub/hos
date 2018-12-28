@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xp.hos.mapper.TokenInfoMapper">
+    <resultMap id="tokenInfoMapper" type="TokenInfo">
+        <id column="token" property="token"></id>
+        <result column="expire_time" property="expireTime"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="refresh_time" property="refreshTime"></result>
+        <result column="active" property="active"></result>
+        <result column="creator" property="creator"></result>
+    </resultMap>
+
+    <insert id="addToken">
+        insert into token_info(token,expire_time,create_time,refresh_time,active,creator)
+        values(#{tokenInfo.token},#{tokenInfo.expireTime},#{tokenInfo.createTime},#{tokenInfo.refreshTime},#{tokenInfo.active},#{tokenInfo.creator})
+    </insert>
+
+    <delete id="deleteToken">
+        delete from token_info where token = #{token}
+    </delete>
+
+    <update id="updateToken">
+        update token_info set token=#{token},expire_time=#{expireTime},active=#{active} where token=#{token}
+    </update>
+
+    <update id="refreshToken">
+         update token_info set token=#{token},refresh_time=#{refreshTime} where token=#{token}
+    </update>
+
+    <select id="getTokenInfoByToken" resultMap="tokenInfoMapper">
+        select * from token_info where token=#{token}
+    </select>
+
+    <select id="getTokenInfos" resultMap="tokenInfoMapper">
+        select * from  token_info where creator=#{creator}
+    </select>
+</mapper>

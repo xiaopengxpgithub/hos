@@ -1,0 +1,6 @@
+com\xp\hos\pojo\ObjectListResult.class
+com\xp\hos\pojo\HosObject.class
+com\xp\hos\pojo\HosObjectSummary.class
+com\xp\hos\pojo\BucketModel.class
+com\xp\hos\util\JsonUtil.class
+com\xp\hos\pojo\ObjectMetaData.class

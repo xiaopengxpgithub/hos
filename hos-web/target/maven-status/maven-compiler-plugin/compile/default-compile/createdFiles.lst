@@ -1,0 +1,12 @@
+com\xp\hos\rest\BaseController.class
+com\xp\hos\security\ContextUtil.class
+com\xp\hos\config\ApplicationServerConfig.class
+com\xp\hos\security\IOperationAccessController.class
+com\xp\hos\security\DefaultOperationAccessController.class
+com\xp\hos\security\SecurityInterceptor.class
+com\xp\hos\HosServerApp.class
+com\xp\hos\HosServerApp$1.class
+com\xp\hos\ApplicationInitialization.class
+com\xp\hos\rest\ManagerController.class
+com\xp\hos\rest\HosController.class
+com\xp\hos\rest\LoginController.class
