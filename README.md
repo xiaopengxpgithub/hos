@@ -7,4 +7,4 @@
 > 3.大数据相关技术:Hadoop+Hbase+zookeeper <br/>
 
 ### 架构图
-![架构图]()
+![我是图片](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
