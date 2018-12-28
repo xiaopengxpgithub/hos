@@ -24,7 +24,7 @@
 `cf的列族内为目录的详细信息`<br />
 
 #### hbase文件表
-![文件表](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%96%87%E4%BB%B6%E8%A1%A8%E7%BB%93%E6%9E%84.png)
+![文件表](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%96%87%E4%BB%B6%E8%A1%A8%E7%BB%93%E6%9E%84.png)<br />
 `rowkey为文件所在目录seqid+_+文件名`<br />
 `c列族内为文件内容`<br />
 `cf的列族内为文件的详细信息`<br />
