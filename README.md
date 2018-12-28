@@ -9,16 +9,20 @@
 ### 架构图
 ![架构图](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
-### 数据库设计
-![数据库](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1.png)
-
-### hbase数据库设计
-
-
 ### 流程设计
 ![流程](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%B5%81%E7%A8%8B%E5%9B%BE1.png)
 ![流程](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%B5%81%E7%A8%8B%E5%9B%BE2.png)
 
-### 功能设计
+### MySQL数据库设计
+![数据库](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1.png)
 
+### Hbase数据库设计
+#### hbase目录表
+![目录表](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E7%9B%AE%E5%BD%95%E8%A1%A8.png)
+#### hbase文件表
+![文件表](https://github.com/xiaopengxpgithub/hos/blob/master/imgs/%E6%96%87%E4%BB%B6%E8%A1%A8%E7%BB%93%E6%9E%84.png)
+
+
+### 功能设计
+* 1.
 
